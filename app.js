@@ -1,13 +1,11 @@
-import express from 'express';
+
 import appRouter from './routes/index.js'
 import {connectToDatabase} from "./db/index.js";
+import createServer from "./utils/server.js";
 
-
-const app = express();
+const app = createServer()
 
 //#Region middlewares
-app.use(express.json());
-app.use('/api/v1/products', appRouter);
 //#endRegion
 
 connectToDatabase().then(() => {

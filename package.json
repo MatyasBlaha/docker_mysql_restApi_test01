@@ -1,14 +1,14 @@
 {
   "name": "docker_mysql_restapi_test01",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "jest": {
     "testEnvironment": "node"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
     "test": "jest"
   },
   "keywords": [],
